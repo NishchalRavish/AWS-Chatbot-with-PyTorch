@@ -1,0 +1,1082 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hello",
+          "Hey",
+          "Good morning",
+          "Good afternoon"
+        ],
+        "responses": [
+          "Hello! How can I assist you with AWS services today?",
+          "Hi there! What do you want to know about AWS?",
+          "Hey! How can I help you with AWS resources?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Bye",
+          "Goodbye",
+          "See you later",
+          "I'm done"
+        ],
+        "responses": [
+          "Goodbye! Feel free to reach out if you have more AWS questions.",
+          "Bye! Have a great day ahead.",
+          "Take care! Let me know if you need any more help with AWS."
+        ]
+      },
+      {
+        "tag": "thank_you",
+        "patterns": [
+          "Thank you",
+          "Thanks",
+          "I appreciate it",
+          "Thanks a lot"
+        ],
+        "responses": [
+          "You're welcome!",
+          "Glad I could help!",
+          "Anytime! If you have more questions, just ask."
+        ]
+      },
+      {
+        "tag": "aws_overview",
+        "patterns": [
+          "What is AWS?",
+          "Give me an overview of AWS",
+          "What does AWS do?",
+          "Tell me about AWS"
+        ],
+        "responses": [
+          "AWS (Amazon Web Services) is a comprehensive cloud platform offering a wide range of services like compute power, storage, databases, machine learning, and more to help businesses scale and innovate faster."
+        ]
+      },
+      {
+        "tag": "aws_ec2",
+        "patterns": [
+          "What is EC2?",
+          "Tell me about AWS EC2",
+          "What does EC2 do?",
+          "Explain EC2 in AWS"
+        ],
+        "responses": [
+          "Amazon EC2 (Elastic Compute Cloud) provides resizable compute capacity in the cloud, allowing you to scale your applications seamlessly. It supports various instance types and offers features like Auto Scaling, load balancing, and spot instances."
+        ]
+      },
+      {
+        "tag": "aws_s3",
+        "patterns": [
+          "What is S3?",
+          "Tell me about Amazon S3",
+          "What is AWS S3 used for?",
+          "Explain S3"
+        ],
+        "responses": [
+          "Amazon S3 (Simple Storage Service) is an object storage service that offers industry-leading scalability, data availability, security, and performance. It’s designed to store and retrieve any amount of data from anywhere on the web."
+        ]
+      },
+      {
+        "tag": "aws_lambda",
+        "patterns": [
+          "What is AWS Lambda?",
+          "Tell me about Lambda",
+          "Explain AWS Lambda",
+          "What does Lambda do?"
+        ],
+        "responses": [
+          "AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers. You simply write the code and Lambda automatically scales and runs it in response to triggers like API calls, file uploads, or database updates."
+        ]
+      },
+      {
+        "tag": "aws_rds",
+        "patterns": [
+          "What is RDS?",
+          "Tell me about Amazon RDS",
+          "Explain RDS",
+          "What does RDS do?"
+        ],
+        "responses": [
+          "Amazon RDS (Relational Database Service) makes it easy to set up, operate, and scale a relational database in the cloud. It supports multiple database engines like MySQL, PostgreSQL, Oracle, and SQL Server, and handles routine database tasks like backups, patching, and scaling."
+        ]
+      },
+      {
+        "tag": "aws_dynamodb",
+        "patterns": [
+          "What is DynamoDB?",
+          "Tell me about Amazon DynamoDB",
+          "What does DynamoDB do?",
+          "Explain DynamoDB"
+        ],
+        "responses": [
+          "Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale. It’s a fully managed, serverless, multi-region, multi-active NoSQL database that’s built for high-performance applications."
+        ]
+      },
+      {
+        "tag": "aws_cloudformation",
+        "patterns": [
+          "What is CloudFormation?",
+          "Tell me about AWS CloudFormation",
+          "Explain CloudFormation",
+          "What does CloudFormation do?"
+        ],
+        "responses": [
+          "AWS CloudFormation is a service that gives you an easy way to model and set up your AWS resources using infrastructure as code. You define your cloud environment using templates and CloudFormation provisions and configures the resources automatically."
+        ]
+      },
+      {
+        "tag": "aws_cloudfront",
+        "patterns": [
+          "What is CloudFront?",
+          "Tell me about AWS CloudFront",
+          "What does CloudFront do?",
+          "Explain CloudFront"
+        ],
+        "responses": [
+          "Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency and high transfer speeds. It integrates seamlessly with AWS services like S3, EC2, and Lambda."
+        ]
+      },
+      {
+        "tag": "aws_vpc",
+        "patterns": [
+          "What is a VPC?",
+          "Tell me about AWS VPC",
+          "What does VPC do?",
+          "Explain VPC"
+        ],
+        "responses": [
+          "Amazon VPC (Virtual Private Cloud) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define. You have complete control over your virtual networking environment, including IP address ranges, subnets, route tables, and security settings."
+        ]
+      },
+      {
+        "tag": "aws_iam",
+        "patterns": [
+          "What is IAM?",
+          "Tell me about AWS IAM",
+          "What does IAM do?",
+          "Explain IAM"
+        ],
+        "responses": [
+          "AWS IAM (Identity and Access Management) helps you securely control access to AWS services and resources. You can create and manage users, groups, roles, and permissions to allow or deny access to specific AWS services and features."
+        ]
+      },
+      {
+        "tag": "aws_sagemaker",
+        "patterns": [
+          "What is SageMaker?",
+          "Tell me about Amazon SageMaker",
+          "What does SageMaker do?",
+          "Explain SageMaker"
+        ],
+        "responses": [
+          "Amazon SageMaker is a fully managed service that provides every developer and data scientist with the ability to build, train, and deploy machine learning models quickly. It offers tools like AutoML, model monitoring, and a built-in Jupyter notebook for seamless ML workflows."
+        ]
+      },
+      {
+        "tag": "aws_elasticache",
+        "patterns": [
+          "What is ElastiCache?",
+          "Tell me about Amazon ElastiCache",
+          "What does ElastiCache do?",
+          "Explain ElastiCache"
+        ],
+        "responses": [
+          "Amazon ElastiCache is a fully managed in-memory caching service that supports Redis and Memcached. It improves the performance of web applications by retrieving information from fast, managed in-memory caches instead of relying entirely on slower disk-based databases."
+        ]
+      },
+      {
+        "tag": "aws_sns",
+        "patterns": [
+          "What is SNS?",
+          "Tell me about Amazon SNS",
+          "What does SNS do?",
+          "Explain SNS"
+        ],
+        "responses": [
+          "Amazon SNS (Simple Notification Service) is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication. It supports message filtering, SMS, email notifications, and application endpoints like Lambda, HTTP/S, and SQS."
+        ]
+      },
+      {
+        "tag": "aws_sqs",
+        "patterns": [
+          "What is SQS?",
+          "Tell me about Amazon SQS",
+          "What does SQS do?",
+          "Explain SQS"
+        ],
+        "responses": [
+          "Amazon SQS (Simple Queue Service) is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications. It supports both standard and FIFO queues."
+        ]
+      },
+      {
+        "tag": "aws_kinesis",
+        "patterns": [
+          "What is Kinesis?",
+          "Tell me about AWS Kinesis",
+          "What does Kinesis do?",
+          "Explain Kinesis"
+        ],
+        "responses": [
+          "Amazon Kinesis makes it easy to collect, process, and analyze real-time, streaming data. It's designed for applications that require continuous, high-throughput data streams for use cases like real-time analytics, log processing, and machine learning."
+        ]
+      },
+      {
+        "tag": "aws_redshift",
+        "patterns": [
+          "What is Redshift?",
+          "Tell me about Amazon Redshift",
+          "What does Redshift do?",
+          "Explain Redshift"
+        ],
+        "responses": [
+          "Amazon Redshift is a fully managed data warehouse service that allows you to run complex SQL queries against petabytes of structured and semi-structured data. It’s optimized for high-performance analytics and integrates seamlessly with other AWS services."
+        ]
+      },
+      {
+        "tag": "aws_glue",
+        "patterns": [
+          "What is AWS Glue?",
+          "Tell me about AWS Glue",
+          "What does Glue do?",
+          "Explain AWS Glue"
+        ],
+        "responses": [
+          "AWS Glue is a fully managed ETL (Extract, Transform, Load) service that makes it easy to prepare and load data for analytics. It automatically discovers and profiles your data, generates code, and runs your ETL jobs, integrating smoothly with other AWS services."
+        ]
+      },
+      {
+        "tag": "aws_ecr",
+        "patterns": [
+          "What is ECR?",
+          "Tell me about Amazon ECR",
+          "What does ECR do?",
+          "Explain ECR"
+        ],
+        "responses": [
+          "Amazon ECR (Elastic Container Registry) is a fully managed container image registry that makes it easy for developers to store, manage, and deploy Docker container images. It integrates with ECS, EKS, and other services to simplify container deployments."
+        ]
+      },
+      {
+        "tag": "aws_eks",
+        "patterns": [
+          "What is EKS?",
+          "Tell me about Amazon EKS",
+          "What does EKS do?",
+          "Explain EKS"
+        ],
+        "responses": [
+          "Amazon EKS (Elastic Kubernetes Service) is a fully managed service that makes it easy to run Kubernetes on AWS without needing to set up and maintain your own Kubernetes control plane. It integrates with AWS networking, security, and scalability tools."
+        ]
+      },
+      {
+        "tag": "aws_iam_policies",
+        "patterns": [
+          "What are IAM policies?",
+          "Tell me about IAM policies",
+          "Explain IAM roles and policies",
+          "How do IAM policies work?"
+        ],
+        "responses": [
+          "IAM policies are JSON documents that define permissions to allow or deny access to AWS resources. Policies are attached to users, groups, or roles and specify what actions are allowed or denied on which resources, with optional conditions."
+        ]
+      },
+      {
+        "tag": "aws_cloudtrail",
+        "patterns": [
+          "What is CloudTrail?",
+          "Tell me about AWS CloudTrail",
+          "What does CloudTrail do?",
+          "Explain CloudTrail"
+        ],
+        "responses": [
+          "AWS CloudTrail enables governance, compliance, and operational and risk auditing of your AWS account. It records account activity and events related to actions across your AWS infrastructure and stores logs for later analysis."
+        ]
+      },
+      {
+        "tag": "aws_config",
+        "patterns": [
+          "What is AWS Config?",
+          "Tell me about AWS Config",
+          "What does AWS Config do?",
+          "Explain AWS Config"
+        ],
+        "responses": [
+          "AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. It continuously monitors and records your AWS resource configurations and allows you to automate compliance checks."
+        ]
+      },
+      {
+        "tag": "aws_inspector",
+        "patterns": [
+          "What is AWS Inspector?",
+          "Tell me about Amazon Inspector",
+          "What does Inspector do?",
+          "Explain Inspector"
+        ],
+        "responses": [
+          "Amazon Inspector is a security service that helps improve the security and compliance of applications deployed on AWS. It automatically assesses applications for vulnerabilities or deviations from best practices, producing a detailed list of findings."
+        ]
+      },
+      {
+        "tag": "aws_athena",
+        "patterns": [
+          "What is Athena?",
+          "Tell me about Amazon Athena",
+          "What does Athena do?",
+          "Explain Athena"
+        ],
+        "responses": [
+          "Amazon Athena is an interactive query service that makes it easy to analyze data directly in Amazon S3 using standard SQL. It’s serverless, so there’s no need to manage infrastructure, and you only pay for the queries you run."
+        ]
+      },
+      {
+        "tag": "aws_emr",
+        "patterns": [
+          "What is EMR?",
+          "Tell me about AWS EMR",
+          "What does EMR do?",
+          "Explain EMR"
+        ],
+        "responses": [
+          "Amazon EMR (Elastic MapReduce) is a cloud big data platform for processing vast amounts of data using open-source tools like Apache Spark, Hadoop, and Hive. It’s ideal for big data analysis, ETL, machine learning, and data warehousing use cases."
+        ]
+      },
+      {
+        "tag": "aws_transcribe",
+        "patterns": [
+          "What is Transcribe?",
+          "Tell me about AWS Transcribe",
+          "What does Transcribe do?",
+          "Explain Amazon Transcribe"
+        ],
+        "responses": [
+          "Amazon Transcribe is an automatic speech recognition (ASR) service that makes it easy for developers to add speech-to-text capability to applications. It supports transcribing audio and video files, live streaming, and custom vocabularies for specialized terms."
+        ]
+      },
+      {
+        "tag": "aws_translate",
+        "patterns": [
+          "What is Translate?",
+          "Tell me about Amazon Translate",
+          "What does Translate do?",
+          "Explain Translate"
+        ],
+        "responses": [
+          "Amazon Translate is a neural machine translation service that delivers fast, high-quality, and customizable language translation. It supports translation for a wide range of languages and can be integrated with applications and websites for real-time translation."
+        ]
+      },
+      {
+        "tag": "aws_comprehend",
+        "patterns": [
+          "What is Comprehend?",
+          "Tell me about Amazon Comprehend",
+          "What does Comprehend do?",
+          "Explain Comprehend"
+        ],
+        "responses": [
+          "Amazon Comprehend is a natural language processing (NLP) service that uses machine learning to extract insights from text. It can identify language, extract key phrases, perform sentiment analysis, and detect entities such as people, organizations, and events."
+        ]
+      },
+      {
+        "tag": "aws_quicksight",
+        "patterns": [
+          "What is QuickSight?",
+          "Tell me about Amazon QuickSight",
+          "What does QuickSight do?",
+          "Explain QuickSight"
+        ],
+        "responses": [
+          "Amazon QuickSight is a scalable business intelligence (BI) service that enables fast, easy-to-use, and machine learning-powered insights. It supports visualizations, interactive dashboards, and enables organizations to make data-driven decisions at scale."
+        ]
+      },
+      {
+        "tag": "aws_timestream",
+        "patterns": [
+          "What is Timestream?",
+          "Tell me about Amazon Timestream",
+          "What does Timestream do?",
+          "Explain Timestream"
+        ],
+        "responses": [
+          "Amazon Timestream is a fast, scalable, serverless time-series database service for IoT and operational applications. It’s designed for efficiently storing and analyzing time-series data, such as log data and sensor readings, with built-in analytics functions."
+        ]
+      },
+      {
+        "tag": "aws_cloudfront",
+        "patterns": [
+          "What is CloudFront?",
+          "Tell me about Amazon CloudFront",
+          "What does CloudFront do?",
+          "Explain CloudFront"
+        ],
+        "responses": [
+          "Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency and high transfer speeds."
+        ]
+      },
+      {
+        "tag": "aws_efs",
+        "patterns": [
+          "What is EFS?",
+          "Tell me about Amazon EFS",
+          "What does EFS do?",
+          "Explain EFS"
+        ],
+        "responses": [
+          "Amazon EFS (Elastic File System) is a scalable and fully managed file storage service for use with AWS cloud services and on-premises resources. It provides a simple, scalable, and elastic shared file storage system for Linux-based workloads."
+        ]
+      },
+      {
+        "tag": "aws_snowball",
+        "patterns": [
+          "What is Snowball?",
+          "Tell me about AWS Snowball",
+          "What does Snowball do?",
+          "Explain Snowball"
+        ],
+        "responses": [
+          "AWS Snowball is a data transport solution that uses secure physical devices to transfer large amounts of data into and out of AWS. It is part of the AWS Snow Family and is designed for edge computing, data migration, and storage."
+        ]
+      },
+      {
+        "tag": "aws_fsx",
+        "patterns": [
+          "What is FSx?",
+          "Tell me about Amazon FSx",
+          "What does FSx do?",
+          "Explain FSx"
+        ],
+        "responses": [
+          "Amazon FSx provides fully managed file systems optimized for a variety of workloads including Windows file systems, Lustre for high-performance computing, and more. It is ideal for workloads requiring high-performance, scalable storage."
+        ]
+      },
+      {
+        "tag": "aws_workspaces",
+        "patterns": [
+          "What is WorkSpaces?",
+          "Tell me about Amazon WorkSpaces",
+          "What does WorkSpaces do?",
+          "Explain WorkSpaces"
+        ],
+        "responses": [
+          "Amazon WorkSpaces is a managed, secure Desktop-as-a-Service (DaaS) solution that allows you to easily provision virtual, cloud-based desktops. It provides remote workers with access to applications and resources from anywhere."
+        ]
+      },
+      {
+        "tag": "aws_workdocs",
+        "patterns": [
+          "What is WorkDocs?",
+          "Tell me about Amazon WorkDocs",
+          "What does WorkDocs do?",
+          "Explain WorkDocs"
+        ],
+        "responses": [
+          "Amazon WorkDocs is a fully managed, secure content creation, storage, and collaboration service. It allows teams to collaborate on documents and securely store and manage files, all within the AWS environment."
+        ]
+      },
+      {
+        "tag": "aws_pinpoint",
+        "patterns": [
+          "What is Pinpoint?",
+          "Tell me about Amazon Pinpoint",
+          "What does Pinpoint do?",
+          "Explain Pinpoint"
+        ],
+        "responses": [
+          "Amazon Pinpoint is a flexible and scalable outbound and inbound marketing communications service. It helps you engage your users by sending targeted messages through email, SMS, push notifications, and voice messages."
+        ]
+      },
+      {
+        "tag": "aws_eventbridge",
+        "patterns": [
+          "What is EventBridge?",
+          "Tell me about Amazon EventBridge",
+          "What does EventBridge do?",
+          "Explain EventBridge"
+        ],
+        "responses": [
+          "Amazon EventBridge is a serverless event bus service that makes it easier to connect applications using data from your own applications, SaaS applications, and AWS services. It helps build event-driven applications and automate workflows."
+        ]
+      },
+      {
+        "tag": "aws_mq",
+        "patterns": [
+          "What is Amazon MQ?",
+          "Tell me about Amazon MQ",
+          "What does Amazon MQ do?",
+          "Explain Amazon MQ"
+        ],
+        "responses": [
+          "Amazon MQ is a managed message broker service that makes it easy to set up and operate message brokers in the cloud. It supports industry-standard APIs and protocols for messaging and is ideal for applications using message queues."
+        ]
+      },
+      {
+        "tag": "aws_appsync",
+        "patterns": [
+          "What is AppSync?",
+          "Tell me about AWS AppSync",
+          "What does AppSync do?",
+          "Explain AppSync"
+        ],
+        "responses": [
+          "AWS AppSync is a managed service that simplifies building scalable GraphQL APIs by handling data synchronization and enabling real-time updates across applications. It connects to data sources such as DynamoDB, Lambda, and more."
+        ]
+      },
+      {
+        "tag": "aws_sagemaker",
+        "patterns": [
+          "What is SageMaker?",
+          "Tell me about Amazon SageMaker",
+          "What does SageMaker do?",
+          "Explain SageMaker"
+        ],
+        "responses": [
+          "Amazon SageMaker is a fully managed service that provides tools for building, training, and deploying machine learning models at scale. It supports the entire machine learning lifecycle, from data preparation to model deployment and monitoring."
+        ]
+      },
+      {
+        "tag": "aws_gamelift",
+        "patterns": [
+          "What is GameLift?",
+          "Tell me about Amazon GameLift",
+          "What does GameLift do?",
+          "Explain GameLift"
+        ],
+        "responses": [
+          "Amazon GameLift is a fully managed service for deploying, operating, and scaling dedicated game servers for multiplayer games. It is designed for high-performance, low-latency gaming experiences and supports session-based multiplayer games."
+        ]
+      },
+      {
+        "tag": "aws_codecommit",
+        "patterns": [
+          "What is CodeCommit?",
+          "Tell me about AWS CodeCommit",
+          "What does CodeCommit do?",
+          "Explain CodeCommit"
+        ],
+        "responses": [
+          "AWS CodeCommit is a fully managed source control service that hosts secure Git-based repositories. It makes it easy for teams to collaborate on code in a secure and scalable environment, with automatic integration with other AWS services."
+        ]
+      },
+      {
+        "tag": "aws_codebuild",
+        "patterns": [
+          "What is CodeBuild?",
+          "Tell me about AWS CodeBuild",
+          "What does CodeBuild do?",
+          "Explain CodeBuild"
+        ],
+        "responses": [
+          "AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages ready for deployment. It scales automatically and integrates seamlessly with other AWS developer tools."
+        ]
+      },
+      {
+        "tag": "aws_codedeploy",
+        "patterns": [
+          "What is CodeDeploy?",
+          "Tell me about AWS CodeDeploy",
+          "What does CodeDeploy do?",
+          "Explain CodeDeploy"
+        ],
+        "responses": [
+          "AWS CodeDeploy is a service that automates code deployments to any instance, including EC2, on-premises servers, and Lambda functions. It helps you release new features rapidly and avoid downtime during deployment."
+        ]
+      },
+      {
+        "tag": "aws_codepipeline",
+        "patterns": [
+          "What is CodePipeline?",
+          "Tell me about AWS CodePipeline",
+          "What does CodePipeline do?",
+          "Explain CodePipeline"
+        ],
+        "responses": [
+          "AWS CodePipeline is a continuous integration and continuous delivery (CI/CD) service for fast and reliable application updates. It automates the steps required to release your software changes, integrating with AWS services and third-party tools."
+        ]
+      },
+      {
+        "tag": "aws_cloudformation",
+        "patterns": [
+          "What is CloudFormation?",
+          "Tell me about AWS CloudFormation",
+          "What does CloudFormation do?",
+          "Explain CloudFormation"
+        ],
+        "responses": [
+          "AWS CloudFormation is a service that allows you to model, provision, and manage AWS and third-party resources using infrastructure as code (IaC). It simplifies provisioning by automating the setup of your entire infrastructure."
+        ]
+      },
+      {
+        "tag": "aws_opsworks",
+        "patterns": [
+          "What is OpsWorks?",
+          "Tell me about AWS OpsWorks",
+          "What does OpsWorks do?",
+          "Explain OpsWorks"
+        ],
+        "responses": [
+          "AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet. It enables you to automate tasks like software configurations, server deployments, and operational management across your environment."
+        ]
+      },
+      {
+        "tag": "aws_lightsail",
+        "patterns": [
+          "What is Lightsail?",
+          "Tell me about Amazon Lightsail",
+          "What does Lightsail do?",
+          "Explain Lightsail"
+        ],
+        "responses": [
+          "Amazon Lightsail is an easy-to-use virtual private server (VPS) that provides everything you need to build and deploy a small-scale cloud-based application or website. It includes compute, storage, and networking capabilities, along with a simplified management console."
+        ]
+      },
+      {
+        "tag": "aws_iot_core",
+        "patterns": [
+          "What is IoT Core?",
+          "Tell me about AWS IoT Core",
+          "What does IoT Core do?",
+          "Explain IoT Core"
+        ],
+        "responses": [
+          "AWS IoT Core is a managed cloud service that lets connected devices easily and securely interact with cloud applications and other devices. It supports MQTT, HTTP, and WebSockets for communication."
+        ]
+      },
+      {
+        "tag": "aws_iot_greengrass",
+        "patterns": [
+          "What is IoT Greengrass?",
+          "Tell me about AWS IoT Greengrass",
+          "What does IoT Greengrass do?",
+          "Explain IoT Greengrass"
+        ],
+        "responses": [
+          "AWS IoT Greengrass extends cloud capabilities to local devices, enabling them to act locally on the data they generate while still using the cloud for management, analytics, and durable storage."
+        ]
+      },
+      {
+        "tag": "aws_kinesis",
+        "patterns": [
+          "What is Kinesis?",
+          "Tell me about Amazon Kinesis",
+          "What does Kinesis do?",
+          "Explain Kinesis"
+        ],
+        "responses": [
+          "Amazon Kinesis is a platform to collect, process, and analyze real-time, streaming data. It is ideal for applications that require real-time analytics, like log and event data monitoring, metrics gathering, and more."
+        ]
+      },
+      {
+        "tag": "aws_data_pipeline",
+        "patterns": [
+          "What is Data Pipeline?",
+          "Tell me about AWS Data Pipeline",
+          "What does Data Pipeline do?",
+          "Explain Data Pipeline"
+        ],
+        "responses": [
+          "AWS Data Pipeline is a web service that helps automate the movement and transformation of data. It enables the creation of data-driven workflows that reliably process and move data between AWS services."
+        ]
+      },
+      {
+        "tag": "aws_glue",
+        "patterns": [
+          "What is AWS Glue?",
+          "Tell me about AWS Glue",
+          "What does Glue do?",
+          "Explain Glue"
+        ],
+        "responses": [
+          "AWS Glue is a fully managed ETL (extract, transform, and load) service that makes it easier to prepare and load data for analytics. It helps discover, catalog, clean, enrich, and transform data for analysis."
+        ]
+      },
+      {
+        "tag": "aws_step_functions",
+        "patterns": [
+          "What are Step Functions?",
+          "Tell me about AWS Step Functions",
+          "What does Step Functions do?",
+          "Explain Step Functions"
+        ],
+        "responses": [
+          "AWS Step Functions is a serverless orchestration service that lets you coordinate multiple AWS services into serverless workflows. It is commonly used for complex data processing, automation, and integrating microservices."
+        ]
+      },
+      {
+        "tag": "aws_snowcone",
+        "patterns": [
+          "What is Snowcone?",
+          "Tell me about AWS Snowcone",
+          "What does Snowcone do?",
+          "Explain Snowcone"
+        ],
+        "responses": [
+          "AWS Snowcone is a small, rugged, and secure edge computing and data transfer device. It is part of the AWS Snow Family and is used for edge data collection, processing, and migration in rugged or remote environments."
+        ]
+      },
+      {
+        "tag": "aws_datasync",
+        "patterns": [
+          "What is DataSync?",
+          "Tell me about AWS DataSync",
+          "What does DataSync do?",
+          "Explain DataSync"
+        ],
+        "responses": [
+          "AWS DataSync is an online data transfer service that simplifies moving large amounts of data between on-premises storage and AWS. It is ideal for data migrations, replication, and backups."
+        ]
+      },
+      {
+        "tag": "aws_backup",
+        "patterns": [
+          "What is AWS Backup?",
+          "Tell me about AWS Backup",
+          "What does AWS Backup do?",
+          "Explain AWS Backup"
+        ],
+        "responses": [
+          "AWS Backup is a fully managed backup service designed to centralize and automate the backup of data across AWS services like EBS, RDS, DynamoDB, and more. It provides a unified solution for backup management and compliance."
+        ]
+      },
+      {
+        "tag": "aws_transcribe",
+        "patterns": [
+          "What is Transcribe?",
+          "Tell me about Amazon Transcribe",
+          "What does Transcribe do?",
+          "Explain Transcribe"
+        ],
+        "responses": [
+          "Amazon Transcribe is an automatic speech recognition (ASR) service that converts speech to text. It is used for transcription of audio and video files, real-time speech analytics, and more."
+        ]
+      },
+      {
+        "tag": "aws_translate",
+        "patterns": [
+          "What is Translate?",
+          "Tell me about Amazon Translate",
+          "What does Translate do?",
+          "Explain Translate"
+        ],
+        "responses": [
+          "Amazon Translate is a neural machine translation service that delivers fast, high-quality, and affordable language translation. It supports over 70 languages and is ideal for content localization and real-time translation applications."
+        ]
+      },
+      {
+        "tag": "aws_comprehend",
+        "patterns": [
+          "What is Comprehend?",
+          "Tell me about Amazon Comprehend",
+          "What does Comprehend do?",
+          "Explain Comprehend"
+        ],
+        "responses": [
+          "Amazon Comprehend is a natural language processing (NLP) service that uses machine learning to discover insights from text, such as sentiment analysis, entity recognition, language detection, and topic modeling."
+        ]
+      },
+      {
+        "tag": "aws_neptune",
+        "patterns": [
+          "What is Amazon Neptune?",
+          "Tell me about Amazon Neptune",
+          "What does Neptune do?",
+          "Explain Neptune"
+        ],
+        "responses": [
+          "Amazon Neptune is a fast, reliable, fully managed graph database service that supports both property graph and RDF graph models. It is ideal for building applications that work with highly connected data such as social networks, recommendation engines, and fraud detection."
+        ]
+      },
+      {
+        "tag": "aws_quicksight",
+        "patterns": [
+          "What is QuickSight?",
+          "Tell me about Amazon QuickSight",
+          "What does QuickSight do?",
+          "Explain QuickSight"
+        ],
+        "responses": [
+          "Amazon QuickSight is a fast, cloud-powered business intelligence (BI) service that makes it easy to create and publish interactive dashboards that include machine learning insights. It is used for analytics and data visualization."
+        ]
+      },
+      {
+        "tag": "aws_timestream",
+        "patterns": [
+          "What is Timestream?",
+          "Tell me about Amazon Timestream",
+          "What does Timestream do?",
+          "Explain Timestream"
+        ],
+        "responses": [
+          "Amazon Timestream is a fast, scalable, and serverless time series database service for IoT and operational applications. It makes it easier to store and analyze time series data for things like monitoring metrics, sensor data, and more."
+        ]
+      },
+      {
+        "tag": "aws_app_migration_service",
+        "patterns": [
+          "What is AWS Application Migration Service?",
+          "Tell me about AWS Application Migration Service",
+          "What does the Application Migration Service do?",
+          "Explain Application Migration Service"
+        ],
+        "responses": [
+          "AWS Application Migration Service (AWS MGN) simplifies and accelerates the migration of applications from physical, virtual, and cloud-based infrastructure to AWS with minimal downtime. It automates the entire migration process, reducing manual work and errors."
+        ]
+      },
+      {
+        "tag": "aws_robomaker",
+        "patterns": [
+          "What is RoboMaker?",
+          "Tell me about AWS RoboMaker",
+          "What does RoboMaker do?",
+          "Explain RoboMaker"
+        ],
+        "responses": [
+          "AWS RoboMaker is a service that makes it easy to develop, test, and deploy intelligent robotics applications at scale. It extends the open-source Robot Operating System (ROS) with cloud-based services for simulation, fleet management, and more."
+        ]
+      },
+      {
+        "tag": "aws_waf",
+        "patterns": [
+          "What is AWS WAF?",
+          "Tell me about AWS WAF",
+          "What does WAF do?",
+          "Explain WAF"
+        ],
+        "responses": [
+          "AWS WAF (Web Application Firewall) is a web application firewall that helps protect your web applications from common web exploits that could affect availability, compromise security, or consume excessive resources."
+        ]
+      },
+      {
+        "tag": "aws_inspector",
+        "patterns": [
+          "What is AWS Inspector?",
+          "Tell me about AWS Inspector",
+          "What does AWS Inspector do?",
+          "Explain AWS Inspector"
+        ],
+        "responses": [
+          "AWS Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. It automatically assesses applications for exposure, vulnerabilities, and deviations from best practices."
+        ]
+      },
+      {
+        "tag": "aws_eventbridge",
+        "patterns": [
+          "What is EventBridge?",
+          "Tell me about Amazon EventBridge",
+          "What does EventBridge do?",
+          "Explain EventBridge"
+        ],
+        "responses": [
+          "Amazon EventBridge is a serverless event bus service that makes it easy to connect applications using events. It delivers real-time data from various AWS services, custom applications, and SaaS applications."
+        ]
+      },
+      {
+        "tag": "aws_service_catalog",
+        "patterns": [
+          "What is AWS Service Catalog?",
+          "Tell me about AWS Service Catalog",
+          "What does Service Catalog do?",
+          "Explain Service Catalog"
+        ],
+        "responses": [
+          "AWS Service Catalog allows organizations to create and manage catalogs of IT services that are approved for use on AWS. It enables central management of commonly deployed services, ensuring compliance and governance."
+        ]
+      },
+      {
+        "tag": "aws_organizations",
+        "patterns": [
+          "What is AWS Organizations?",
+          "Tell me about AWS Organizations",
+          "What does AWS Organizations do?",
+          "Explain AWS Organizations"
+        ],
+        "responses": [
+          "AWS Organizations helps you centrally manage and govern your environment as you grow and scale your AWS resources. It allows you to create accounts, apply policies, and manage access controls across multiple accounts."
+        ]
+      },
+      {
+        "tag": "aws_cognito",
+        "patterns": [
+          "What is Amazon Cognito?",
+          "Tell me about Amazon Cognito",
+          "What does Cognito do?",
+          "Explain Cognito"
+        ],
+        "responses": [
+          "Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps. It scales to millions of users and supports social and enterprise identity providers."
+        ]
+      },
+      {
+        "tag": "aws_dms",
+        "patterns": [
+          "What is DMS?",
+          "Tell me about AWS DMS",
+          "What does DMS do?",
+          "Explain DMS"
+        ],
+        "responses": [
+          "AWS Database Migration Service (DMS) helps you migrate databases to AWS quickly and securely. The source database remains operational during the migration, minimizing downtime to applications that rely on the database."
+        ]
+      },
+      {
+        "tag": "aws_appstream",
+        "patterns": [
+          "What is AppStream?",
+          "Tell me about Amazon AppStream",
+          "What does AppStream do?",
+          "Explain AppStream"
+        ],
+        "responses": [
+          "Amazon AppStream 2.0 is a fully managed application streaming service that allows you to stream desktop applications to any device. It provides a responsive and fluid experience for users."
+        ]
+      },
+      {
+        "tag": "aws_sumerian",
+        "patterns": [
+          "What is Sumerian?",
+          "Tell me about Amazon Sumerian",
+          "What does Sumerian do?",
+          "Explain Sumerian"
+        ],
+        "responses": [
+          "Amazon Sumerian is a service that allows you to create and run 3D, augmented reality (AR), and virtual reality (VR) applications without requiring any specialized programming or 3D graphics expertise."
+        ]
+      },
+      {
+        "tag": "aws_ground_station",
+        "patterns": [
+          "What is Ground Station?",
+          "Tell me about AWS Ground Station",
+          "What does Ground Station do?",
+          "Explain Ground Station"
+        ],
+        "responses": [
+          "AWS Ground Station is a fully managed service that provides satellite ground stations as a service. It allows you to control satellite communications, downlink data, and integrate with other AWS services for processing."
+        ]
+      },
+      {
+        "tag": "aws_ops_hub",
+        "patterns": [
+          "What is OpsHub?",
+          "Tell me about AWS OpsHub",
+          "What does OpsHub do?",
+          "Explain OpsHub"
+        ],
+        "responses": [
+          "AWS OpsHub is a graphical user interface that simplifies the management of AWS Snow Family devices, making it easy to setup, monitor, and manage edge computing and data migration operations."
+        ]
+      },
+      {
+        "tag": "aws_wavelength",
+        "patterns": [
+          "What is AWS Wavelength?",
+          "Tell me about AWS Wavelength",
+          "What does Wavelength do?",
+          "Explain Wavelength"
+        ],
+        "responses": [
+          "AWS Wavelength brings AWS services to the edge of 5G networks, minimizing latency for mobile and connected device applications. It enables developers to build applications that require ultra-low latency."
+        ]
+      },
+      {
+        "tag": "aws_local_zones",
+        "patterns": [
+          "What are Local Zones?",
+          "Tell me about AWS Local Zones",
+          "What does Local Zones do?",
+          "Explain Local Zones"
+        ],
+        "responses": [
+          "AWS Local Zones are an extension of an AWS Region that places compute, storage, and networking services closer to large populations and industries, enabling low-latency applications."
+        ]
+      },
+      {
+        "tag": "aws_vr_and_ar",
+        "patterns": [
+          "What is AWS VR and AR?",
+          "Tell me about AWS VR and AR",
+          "What does AWS VR and AR do?",
+          "Explain AWS VR and AR"
+        ],
+        "responses": [
+          "AWS provides a suite of tools and services for building and deploying Virtual Reality (VR) and Augmented Reality (AR) applications. This includes services like Sumerian, AI tools, and scalable compute."
+        ]
+      },
+      {
+        "tag": "aws_autoscaling",
+        "patterns": [
+          "What is Auto Scaling?",
+          "Tell me about AWS Auto Scaling",
+          "What does Auto Scaling do?",
+          "Explain Auto Scaling"
+        ],
+        "responses": [
+          "AWS Auto Scaling monitors your applications and automatically adjusts capacity to maintain steady, predictable performance at the lowest possible cost. It works across multiple AWS services, including EC2, ECS, and DynamoDB."
+        ]
+      },
+      {
+        "tag": "aws_elastic_transcoder",
+        "patterns": [
+          "What is Elastic Transcoder?",
+          "Tell me about Elastic Transcoder",
+          "What does Elastic Transcoder do?",
+          "Explain Elastic Transcoder"
+        ],
+        "responses": [
+          "Amazon Elastic Transcoder is a cloud-based media transcoding service. It allows you to convert media files (e.g., videos) from their source format into formats that will play on smartphones, tablets, and other devices."
+        ]
+      },
+      {
+        "tag": "aws_fargate",
+        "patterns": [
+          "What is AWS Fargate?",
+          "Tell me about AWS Fargate",
+          "What does Fargate do?",
+          "Explain Fargate"
+        ],
+        "responses": [
+          "AWS Fargate is a serverless compute engine for containers that works with both Amazon ECS and EKS. It allows you to run containers without having to manage the underlying infrastructure."
+        ]
+      },
+      {
+        "tag": "aws_iam",
+        "patterns": [
+          "What is IAM?",
+          "Tell me about AWS IAM",
+          "What does IAM do?",
+          "Explain IAM"
+        ],
+        "responses": [
+          "AWS Identity and Access Management (IAM) enables you to manage access to AWS services and resources securely. It allows you to create and manage users, groups, and permissions."
+        ]
+      },
+      {
+        "tag": "aws_efs",
+        "patterns": [
+          "What is EFS?",
+          "Tell me about Amazon EFS",
+          "What does EFS do?",
+          "Explain EFS"
+        ],
+        "responses": [
+          "Amazon Elastic File System (EFS) provides scalable file storage for use with AWS Cloud services and on-premises resources. It offers fully managed, elastic NFS file systems that can scale to petabytes of data."
+        ]
+      },
+      {
+        "tag": "aws_batch",
+        "patterns": [
+          "What is AWS Batch?",
+          "Tell me about AWS Batch",
+          "What does AWS Batch do?",
+          "Explain AWS Batch"
+        ],
+        "responses": [
+          "AWS Batch enables you to efficiently run hundreds of thousands of batch computing jobs on AWS. It automatically provisions the resources needed to run your batch jobs at scale."
+        ]
+      }
+
+
+    ]
+  }
+  
